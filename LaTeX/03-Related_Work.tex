@@ -1,0 +1,52 @@
+\section{Related Work}
+The work presented in this paper builds on rapid prototyping of circuits, the simplicity of modification on circuits, multi-layer solutions, and approaches of how to assemble components on circuits.
+
+\subsection{Conventional Circuit Prototyping Tools}
+A breadboard is the most popular tool for electronic circuit prototyping due to its ease of circuit modification and its ability to build all kinds of projects including simple and complicated circuits. Even though its component-pluggable mechanism requires no soldering, complicated circuits involving IC chips built on a breadboard often result in complicated wiring when using jumpers. This significantly slows down the process of prototyping because a clutter of jumper wires overlapping each other on a breadboard and blocking the sight of a user increases difficulty in circuit modification and plugging new components.
+
+A perfboard is also a popular prototyping tool mainly serving a purpose for component fixation resulting in a more compact and a more stable circuit. However, building a circuit on a perfboard requires soldering and connecting jumper wires that may take several hours to complete.
+
+A printed circuit board (PCB) is usually a final stage for prototyping that provides more freedom with respect to component positioning and a much more compact circuit. However, PCBs allow no circuit modification, and it normally takes up to 2 weeks of processing time. Thus, PCBs are currently not suitable for rapid prototyping.
+
+\subsection{Novel Designs in Circuit Prototyping}
+% Advances in personal PCB fabrication devices and also material sciences have enabled new methods of prototyping.
+% Recently, HCI researchers have proposed materials and also assembly methods for a variety of prototyping tools:
+% Instant Inkjet Circuits \cite{Instant_Inkjet_Circuits} demonstrated the use of conductive ink to create printed, flexible circuits along with 3M conductive tape to provided a means of attaching components.
+% Visible Breadboard \cite{Ochiai:2010:VED:1836845.1836950} presents the concept of a solder-less prototyping platform. LittleBits \cite{LittleBits} proposes an open-sourced library of modularized components as a means of prototyping.
+% Circuit Stickers \cite{Circuit_Stickers} and Sketching in Circuit \cite{Sketching_in_Circuits} both utilize a form of conductive tape on paper as a tool.
+% Lastly, LightUp \cite{LightUp} demonstrates an important concept in electronics, multi-layer circuits.
+
+Since both breadboards and perfboards require connections via jumper wires that slow down the process of prototyping and decrease the ease of use of such tools, advances in personal PCB fabrication devices and also material sciences have enabled new methods of prototyping centering on making wire connections.
+Recently, HCI researchers have proposed materials and also assembly methods for a variety of prototyping tools mainly divided into three categories based on the form of the substrate for the components: board, conductive ink and paper electronics, and modularized electronics.
+
+\subsubsection{Board}
+% Previous works in the board category features a piece of hard flat substrate for electrical components.
+Visible Breadboard \cite{Visible_Breadboard} is a pluggable and jumper-wire-free prototyping platform by employing a capacitive touch layer for cable connections that averagely saves up to approximately 55\% of time compared to that of building the same circuit on a breadboard. Yet, \cite{Visible_Breadboard} is not compatible with most standardized components due to its dimensions causing inapplicability aside from elementary education.
+
+\subsubsection{Conductive Ink and Paper Electronics}
+Instant Inkjet Circuits \cite{Instant_Inkjet_Circuits} demonstrated the use of conductive ink to create printed, flexible circuits along with 3M conductive tape to provide a means of attaching components. 
+% \cite{Instant_Inkjet_Circuits} using off-the-shelf conventional printers and replacing the default ink with cartridges filled with silver nano-particle ink.
+Although \cite{Instant_Inkjet_Circuits} claims to be a rapid prototyping tool that replaces manual wiring, printed circuit paper (PCP) suffers from 2 major drawbacks. One is the single-layer issue that limits the routing of complicated circuits. Another is the modification issue where all of components need to be reattached to a piece of new PCP after correcting a design error on a previous piece of PCP.
+
+Circuit Stickers \cite{Circuit_Stickers} extends the use of \cite{Instant_Inkjet_Circuits} and proposes a method to affix components using stickers to create more reliable circuits by expanding contact areas.
+Sketching in Circuit \cite{Sketching_in_Circuits} utilizes copper tape on paper as a tool to replace jumper wire connections.
+ShrinkyCircuits \cite{ShrinkyCircuits} uses a conductive pen and a heat-shrinking polymer substrate to create a solderless and jumper-wire-free circuit.
+\cite{Sketching_in_Circuits} and \cite{ShrinkyCircuits} are new forms of circuit prototyping focusing more on education, creativity, and design instead of targeting rapid prototyping for advanced hardware design and implementation.
+
+\subsubsection{Modularized Electronics}
+% LittleBits \cite{LittleBits} proposes an open-sourced library of modularized components as a means of prototyping.
+% LightUp \cite{LightUp} demonstrates an important concept in electronics, multi-layer circuits.
+
+LittleBits \cite{LittleBits} proposes modularized components which become functional by simply snapping parts together with magnets as a means of prototyping without the need of wiring and electrical expertise.
+LightUp \cite{LightUp} transforms electrical components into blocks assisting beginners to explore fundamental concepts of engineering and electronics.
+Despite \cite{LittleBits} and \cite{LightUp} being rapid prototyping tools, the encapsulation of hardware details leads to impracticability under scenarios that require customized components and complicated circuits.
+
+
+% \subsection{Circuit Printing Technology}
+% The core of our work is circuit printing technology. In the work Instant Inkjet Circuits, the authors proposed a method in which they used off-the-shelf conventional printers and replaced the default ink with cartridges filled with silver nano-particle ink. This opens up circuit printing technology for the masses. Not only does such a work deliver rapid circuit creation, but also opens up a possibility of rapid prototyping, which we will discuss more in the next subsection.
+
+% \subsection{Rapid Prototyping}
+% Currently, a big player in the prototyping world is LittleBits. LittleBits seeks to modularize components and reduce the difficulty of prototyping with sophisticated electronics an elementary task. Such a feat is achieved by utilizing materials such as cardboard and paper and creating tiny circuit boards out of these materials. Along with the tiny circuits, magnets provide a mechanism for attaching differing components together to prototype complicated circuits. But besides LittleBits, Visible Breadboard presents a breadboard-like routing board that employs a capacitive touch layer for cable connections. An intuitive method such as capacitive touch showed immense improvement over soldering solutions. The last member of popular prototyping methods is the application of conductive tape as a means of connection, as well as fixing components in place. Both Circuit Stickers and Sketching in Circuit are proponents of this method.
+
+% \subsection{Multi-layer Prototyping}
+% Despite the various kinds of rapid prototyping tools, multi-layer circuits are a difficult task for current methods. LightUp utilizes a stacking method in which electronic components can be layered on top of each other to create multi-layer prototyping. This third dimension allows for a third direction in which circuits can expand, and also simplifies design of complicated circuits.
