@@ -1,7 +1,7 @@
 \section{User Study}
 
 % \subsection{Foreword}
-By combining the plug-and-play mechanism of breadboards and the rapid routing of PCP, whether the combination of the benefits results in faster prototyping times is of interest. Therefore, both a breadboard and PCP should be evaluated as a basis of comparison to \papertitle.
+% By combining the plug-and-play mechanism of breadboards and the rapid routing of PCP, whether the combination of the benefits results in faster prototyping times is of interest. Therefore, both a breadboard and PCP should be evaluated as a basis of comparison to \papertitle.
 
 %However, a decision to remove printable circuits as a member of the three prototyping tools was made. This is a result of two aspects, reliability and functionality. 
 %熬夜
@@ -20,7 +20,7 @@ By combining the plug-and-play mechanism of breadboards and the rapid routing of
 
 % However, \cite{Circuit_Stickers} suggested that the 3M conductive tape is a liability in component connection due to small contact areas between a component pin and the tape. To verify this, we launched a 5-person pilot study asking participants to attach a seven segment display via 3M conductive tape to PCP on which lies a suitable ink pattern to place a seven segment display resembling Figure 7b in \cite{Instant_Inkjet_Circuits}. We concluded that averagely 18\% of the pins are electrically connected to the conductive ink through the 3M tape. Although \cite{Circuit_Stickers} proposes a solution by expanding contact areas, great efforts with high level of component customization to allow for reliable connections, complete functionality, and faster prototyping results in the loss of rapidness in prototyping. Thus, we remove PCP from our evaluation.
 
-However, \cite{Circuit_Stickers} suggests that the 3M conductive tape has poor reliability in component connection. To verify this, we imitate Figure 7b in \cite{Instant_Inkjet_Circuits} and conclude that only 18\% of the pins are electrically connected to the conductive ink through the 3M tape. Thus, we remove PCP from our evaluation.
+% However, \cite{Circuit_Stickers} suggests that the 3M conductive tape has poor reliability in component connection. To verify this, we imitate Figure 7b in \cite{Instant_Inkjet_Circuits} and conclude that only 18\% of the pins are electrically connected to the conductive ink through the 3M tape. Thus, we remove PCP from our evaluation.
 
 %In our pilot study, we found that the unreliable nature of printable circuits resulted in the lack of functionality in our implementation... Therefore...
 
@@ -32,15 +32,23 @@ To evaluate the convenience and modification ability of breadboard and \papertit
 %把下面的放進圖片敘述
 % The first circuit consists of a temperature sensor (LM35) and a LED that turns on as the temperature rises 3\textcelsius. Without changing the first circuit, a RGB LED is then added to signify the range that the temperature is in. The RGB LED will change smoothly from aqua to green to red every increment of 3\textcelsius. Lastly, a four-digit seven segment is added to display the temperature reading in Celsius.
 
+\begin{figure}[h]
+  \begin{center}
+  \includegraphics[width=1\columnwidth]{figures/Circuit_Construction_Duration_v15.pdf}
+  \caption{In the following figures C1 is short for \textit{Circuit 1} and so forth. S means the empty scratch state. BB stands for breadboard and uCK is brief for \papertitle. Lastly, B is short for beginner and E is short for expert. (A) is the average completion time in additive sequence divided into beginner and expert. (B) is the average completion time in subtractive sequence divided into beginner and expert.}
+  \label{fig:Circuit_Construction_Duration}
+  \end{center}
+\end{figure}
+
 \subsection{Procedure}
 
-16 participants (5 females, mean age 22.9) were recruited from departments of electrical and computer science engineering. Half are beginners who have little or no prototyping experiences using breadboard with less than 10 projects, and the other half vice versa.
+16 participants (5 females, mean age 22.9) were recruited from departments of electrical engineering and computer science engineering. Half are beginners who have little or no prototyping experiences using a breadboard with less than 10 projects, and the other half vice versa.
 
 Participants were asked to complete the 3 circuits with full functionality in either an additive or subtractive circuit construction order starting from namely \textit{Circuit 1} to \textit{3} or \textit{3} to \textit{1}, respectively, by using the 2 tools in random order. In addition to circuit components, participants were given full information for circuit construction on a monitor including Fritzing schematics, circuit schematics, and datasheet. Participants were also allowed to operate a computer for searching additional information or adjusting the monitor display view.
 
 Participants do not need to remove components from the previous circuit during additive circuit construction but must remove unnecessary components during subtractive circuit construction.
 
-Lastly, a questionnaire was filled to rank the convenience and modification ability of the two tools and to receive comments from the participants.
+Lastly, participants were interviewed to express their opinions regarding the convenience and modification ability of the two tools.
 
 % \subsubsection{Pre-evaluation}
 % Users were first asked to answer a questionnaire in order to obtain basic information regarding age and gender. Then, users were asked how many times they have used breadboards in the past, and if they had any experience at all they were asked the source of their exposure and the most difficult circuit they have prototyped. To conclude the pre-evaluation, users were asked they have tried other prototyping tools and if so, which ones.

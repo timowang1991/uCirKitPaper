@@ -71,11 +71,16 @@
 % End of preamble. Here it comes the document.
 \begin{document}
 
-\title{uCirKit: a fast and easily modifiable circuit prototyping tool with printed circuit}
+\title{\papertitle: a fast and easily modifiable circuit prototyping tool with printed circuit}
 
 \teaser{
-\centering \includegraphics[width=1.0\textwidth]{figures/Fritzing_Schematics_v3.pdf} 
-\caption{We present a keyboard cover with capacitive touch sensing capability which automatically disables itself while typing. Sensing wires are embedded into a typical keyboard cover (A), the modified cover is then put on an off-the-shelf keyboard (B).  The sensing grid is all over the keyboard with 0.5cm grid size (C). This results in a low-resolution raw intensity image when hands are near the surface of the keyboard (D). The image is then processed to obtain touched areas (E+F). The raw image can also be used to robustly recognize whether user wants to type on the keyboard (G) or to control cursor with touchpad (H) using a machine learning-based classifier.}
+\centering \includegraphics[width=1.0\textwidth]{figures/Figure1.pdf} 
+\caption{(A) Exploded view.
+         (B) Assembled state.
+         (C) Zones marked with same color are electrically connected via board contact when assembled, and all current is conducted to the top layer.
+         (D) Each spring that is connected by PCP allows for conductivity between the springs.
+         (E) Connections between springs are highlighted by the red wire.
+         (F) Contact springs (part number OG-320816) used on our prototype.}
 \label{fig:figure1}
 }
 
@@ -100,14 +105,12 @@
 \input{01-Abstract.tex}
 
 \category{H.5.m.}{Information Interfaces and Presentation
-  (e.g. HCI)}{Miscellaneous} \category{See
-  \url{http://acm.org/about/class/1998/} for the full list of ACM
-  classifiers. This section is required.}{}{}
+  (e.g. HCI)}{Miscellaneous}{}{}
 
 \keywords{Rapid Prototyping; Breadboard; Printable Circuits; Conductive Ink}
 
 \input{02-Introduction.tex}
-\input{03-Related_Work.tex}
+%\input{03-Related_Work.tex}
 \input{04-System_Implementation.tex}
 % \input{05-User_Study.tex}
 \input{05-User_Study_v2.tex}
